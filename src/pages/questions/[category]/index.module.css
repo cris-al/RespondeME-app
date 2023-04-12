@@ -1,0 +1,17 @@
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.optioncontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}

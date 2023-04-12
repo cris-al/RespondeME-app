@@ -1,0 +1,11 @@
+.option {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #004d40;
+    border-radius: 5px;
+}
+.option:hover {
+    cursor: pointer;
+    background-color: #004d40;
+}
