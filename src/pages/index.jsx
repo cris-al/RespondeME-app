@@ -6,6 +6,8 @@ import CultureIcon from "../../public/culture-icon.svg";
 import SporIcon from "../../public/sport-icon.svg";
 import EntertaimentIcon from "../../public/entertaiment-icon.svg";
 import DeveloperIcon from "../../public/developer-icon.svg";
+import MainImage from "../../public/QandA.png";
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
 const cards = [
@@ -25,12 +27,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <p>¡Bienvenido/a a nuestro juego de preguntas y respuestas RespondeME! 
-          Tienes solo 10 segundos para responder cada pregunta y demostrar tu habilidad. ¡Que comience la diversión!
+        <section className={styles.imageandp}>
+        <Image src={MainImage} alt="Imagen repressentativa de RespondeME" className={styles.image}/>
+        <p className={styles.paragraph}>
+          ¡Bienvenido/a a nuestro juego de preguntas y respuestas RespondeME! 
           En RespondeME, encontrarás preguntas sobre diversas categorías, como Cultura General, Conceptos de Programación, 
           Deportes y Entretenimiento. 
-          Prepárate para poner a prueba tus conocimientos y aprender cosas nuevas.
-          ¡Que disfrutes jugando en RespondeME y buena suerte!</p>
+          ¡Que disfrutes jugando en RespondeME y buena suerte!
+        </p>
+        </section>
         <section className={styles.cards}>
           { cards.map(el => <Card
                               key={el.text}

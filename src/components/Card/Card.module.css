@@ -4,11 +4,11 @@
     gap: 1rem;
     padding: 1rem;
     border-radius: 10px;
-    background: linear-gradient(to right, #004d40, #00796b);
-    box-shadow: 3px 3px 5px #bdbdbd;
+    border: 1px solid #0e50b3;
 }
 .container:hover {
-    box-shadow: 3px 3px 10px #bdbdbd;
+    box-shadow: 0 0 10px #bdbdbd;
+    background-color: #0e50b3;
     cursor: pointer;
 }
 .container:hover .image {
@@ -29,12 +29,15 @@
 
 @media (min-width: 576px) {
     .container {
-        width: 230px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 240px;
         padding: 1.5rem;
     }
     .image {
-        height: 60px;
-        width: 60px;
+        height: 70px;
+        width: 70px;
     }
     .title {
         font-size: 1.1rem;
@@ -42,18 +45,16 @@
 }
 @media (min-width: 768px) {
     .container {
-        width: 300px;
+        width: 330px;
     }
     .image {
-        height: 80px;
-        width: 80px;
+        height: 90px;
+        width: 90px;
     }
 }
 @media (min-width: 992px) {
     .container {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        
         width: 400px;
     }
     .image {
@@ -65,27 +66,11 @@
     }
 }
 @media (min-width: 1200px) {
-    .container {
-        width: 450px;
-        padding: 2rem;
-    }
-    .image {
-        height: 150px;
-        width: 150px;
-    }
     .title {
         font-size: 1.4rem;
     }
 }
 @media (min-width: 1400px) {
-    .container {
-        width: 500px;
-        padding: 3rem 2rem;
-    }
-    .image {
-        height: 180px;
-        width: 180px;
-    }
     .title {
         font-size: 1.5rem;
     }

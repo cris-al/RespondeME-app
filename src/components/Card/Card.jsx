@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 export default function Card({ text, icon, to }) {
     const router = useRouter();
-    const handleClick = () => router.push("/questions/"+to);
+    const handleClick = () => router.push("/questions");
     return(
         <section className={Style.container} onClick={handleClick}>
             <Image className={Style.image} src={icon} alt={"Icono de "+text}/>
